@@ -1,0 +1,23 @@
+# 직업 변경 쿨타임 (시간 단위). 2일 = 48
+# 처음 직업을 고를 때는 쿨타임이 없습니다.
+change-cooldown-hours: 48
+
+# 메리트: 자기 직업 활동
+merit:
+  farmer-crop-bonus-chance: 0.5      # 다 자란 작물 수확 시 추가 드롭 확률
+  miner-ore-bonus-chance: 0.4        # 광물 채굴 시 추가 드롭 확률
+  miner-night-vision: true           # 지하에서 야간 투시
+  fisher-bonus-chance: 0.35          # 낚시 성공 시 전리품 추가 지급 확률
+  fisher-bonus-exp: 3                # 낚시 추가 경험치
+  fisher-dolphins-grace: true        # 물속에서 돌고래의 우아함
+  hunter-drop-bonus-chance: 0.4      # 몹 처치 시 드롭 추가 확률
+  hunter-damage-multiplier: 1.25     # 몹에게 주는 피해 배율
+  builder-refund-chance: 0.3         # 블록 설치 시 블록 1개 환급 확률
+
+# 디메리트: 남의 직업 활동 (직업이 없는 사람은 적용 안 됨)
+penalty:
+  farmer-crop-loss-chance: 0.35      # 농부가 아닌데 작물 수확 시 드롭 소실 확률
+  miner-ore-loss-chance: 0.35        # 광부가 아닌데 광물 채굴 시 드롭 소실 확률
+  fisher-loss-chance: 0.4            # 어부가 아닌데 낚시 성공 시 전리품 소실 확률
+  combat-damage-multiplier: 0.75     # 사냥꾼이 아닌데 몹을 공격할 때 피해 배율
+  build-exhaustion: 0.5              # 건축가가 아닌데 블록 설치 시 추가 허기 소모 (4.0 = 허기 1칸)
